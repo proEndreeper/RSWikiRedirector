@@ -6,8 +6,14 @@
                   "*://2007.runescape.wikia.com/*",
                   "*://runescape.wikia.com/*",
                   "*://oldschoolrunescape.wikia.com/*"],
+  
   "background": {
     "scripts": ["background.js"]
+  },
+
+  "icons":{
+  	 "48": "icon48.png",
+  	"128": "icon128.png"
   },
 
   "manifest_version": 2
