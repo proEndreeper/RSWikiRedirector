@@ -15,6 +15,7 @@ function splitURL(url){
 chrome.webRequest.onBeforeRequest.addListener(
   function(info) {
     let splitUrl = splitURL(info.url);
+    if(splitUrl===null) return;
     let redirectUrl = "https://"+REDIRECTS[splitUrl[2]]+splitUrl[3].replace(/^\/wiki\//i,"/w/");
     console.log("RSWiki intercepted: " + info.url + "\nRedirecting to "+redirectUrl);
     // Redirect the old wikia request to new wiki	
