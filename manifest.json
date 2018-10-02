@@ -1,0 +1,14 @@
+{
+  "name": "RS Wiki Redirector",
+  "version": "1.0",
+  "description": "Redirects RS Wikia requests to RS Wiki",
+  "permissions": ["webRequest", "webRequestBlocking",
+                  "*://2007.runescape.wikia.com/*",
+                  "*://runescape.wikia.com/*",
+                  "*://oldschoolrunescape.wikia.com/*"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "manifest_version": 2
+}
