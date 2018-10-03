@@ -1,5 +1,6 @@
 {
   "name": "RS Wiki Redirector",
+  "author": "proEndreeper",
   "version": "1.0",
   "description": "Redirects RS Wikia requests to RS Wiki",
   "permissions": ["webRequest", "webRequestBlocking",
@@ -7,7 +8,8 @@
                   "*://runescape.wikia.com/*"],
   
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js"],
+    "persistent": true
   },
 
   "icons":{
