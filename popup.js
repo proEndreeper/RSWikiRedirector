@@ -31,7 +31,6 @@
 			stateImage.style.backgroundImage = "url('powerbutton_"+(result.isDisabled?"off":"on")+".png')";
 			stateDesc.innerHTML = result.isDisabled?"disabled":"enabled";
 			stateDesc.style.color = result.isDisabled?"#7C1D1D":"#217A3D";
-			(chrome.browserAction).setIcon({path:result.isDisabled?"icon32_black.png":"icon32.png"});
 		});
 	}
 	update();
