@@ -5,7 +5,7 @@
 
   let storage = window.storage || chrome.storage;
 
-  const RSWIKIA_REGEX = /^(http|https):\/\/([^\.]+)\.wikia\.com(.*)$/i;
+  const RSWIKIA_REGEX = /^(http|https):\/\/([^\.]+)\.(wikia|fandom)\.com(.*)$/i;
 
   const REDIRECTS = {
     "oldschoolrunescape":"oldschool.runescape.wiki",
