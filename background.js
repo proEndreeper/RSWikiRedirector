@@ -5,7 +5,7 @@
 
   let storage = window.storage || chrome.storage;
 
-  const RSWIKIA_REGEX = /^(http|https):\/\/([^\.]+)\.wikia\.com(.*)$/i;
+  const RSWIKIA_REGEX = /^(http|https):\/\/([^\.]+)\.(wikia|fandom)\.com(.*)$/i;
 
   const REDIRECTS = {
     "oldschoolrunescape":"oldschool.runescape.wiki",
@@ -28,7 +28,7 @@
         return;
       }
       // Generate new url
-      let redirectUrl = "https://"+newDomain+splitUrl[3].replace(/^\/wiki\//i,"/w/");
+      let redirectUrl = "https://"+newDomain+splitUrl[4].replace(/^\/wiki\//i,"/w/");
       console.log("RSWikia intercepted: " + info.url + "\nRedirecting to "+redirectUrl);
       // Redirect the old wikia request to new wiki	
       return {redirectUrl:redirectUrl};
@@ -37,7 +37,9 @@
     {
       urls: [
         "*://oldschoolrunescape.wikia.com/*",
-        "*://runescape.wikia.com/*"
+        "*://runescape.wikia.com/*",
+        "*://oldschoolrunescape.fandom.com/*",
+        "*://runescape.fandom.com/*"
       ]
     },
     // extraInfoSpec
