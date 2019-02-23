@@ -9,24 +9,33 @@
                   "*://oldschoolrunescape.fandom.com/*",
                   "*://runescape.fandom.com/*",
                   "webNavigation",
-                  "tabs"],
+                  "tabs"
+                 ],
 
   "applications": {
     "gecko" : {
       "id": "{c3cc188f-ea35-4519-a09c-72e8f06b5d11}"
     }
   },
-  
+
   "background": {
     "scripts": ["background.js"],
     "persistent": true
   },
-  
+
   "browser_action": {
     "default_icon": "icon32.png",
     "default_title": "RS Wiki Redirector",
     "default_popup": "popup.html"
   },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.*/*"],
+      "js": ["searchFilter.js"],
+      "run_at": "document_end"
+    }
+  ],
 
   "icons":{
   	 "48": "icon48.png",
