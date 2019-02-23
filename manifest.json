@@ -1,14 +1,20 @@
 {
   "name": "RS Wiki Redirector",
   "author": "proEndreeper",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Redirects RS Wikia/Fandom requests to RS Wiki",
-  "permissions": ["webRequest", "webRequestBlocking", "storage",
+  "permissions": ["storage",
                   "*://oldschoolrunescape.wikia.com/*",
                   "*://runescape.wikia.com/*",
                   "*://oldschoolrunescape.fandom.com/*",
+<<<<<<< master
                   "*://runescape.fandom.com/*"
                 ],
+=======
+                  "*://runescape.fandom.com/*",
+                  "webNavigation",
+                  "tabs"],
+>>>>>>> master
 
   "applications": {
     "gecko" : {
