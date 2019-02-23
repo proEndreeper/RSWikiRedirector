@@ -3,11 +3,13 @@
   "author": "proEndreeper",
   "version": "1.2.1",
   "description": "Redirects RS Wikia/Fandom requests to RS Wiki",
-  "permissions": ["webRequest", "webRequestBlocking", "storage",
+  "permissions": ["storage",
                   "*://oldschoolrunescape.wikia.com/*",
                   "*://runescape.wikia.com/*",
                   "*://oldschoolrunescape.fandom.com/*",
-                  "*://runescape.fandom.com/*"],
+                  "*://runescape.fandom.com/*",
+                  "webNavigation",
+                  "tabs"],
 
   "applications": {
     "gecko" : {
