@@ -8,7 +8,13 @@
       // recursively go up through tree until getting relevant div to remove
       function getParent(element, maxDepth = 10) {
         if (element.parentElement) {
-          if (element.parentElement.className === 'g') {
+          if (element.className === 'g') {
+            var removedElement = document.createElement("span");
+            removedElement.classList.add("st");
+            removedElement.innerHTML="RS Wikia search result removed by RS Wiki Redirector."
+            removedElement.style.paddingBottom="1em";
+            removedElement.style.display="inline-block";
+            element.parentElement.appendChild(removedElement);
             element.remove();
           } else {
             getParent(element.parentElement, maxDepth - 1);

@@ -9,6 +9,8 @@
 				width:200px;
 				height:275px;
 				overflow:hidden;
+				font-family: "Segoe UI", Tahoma, sans-serif;
+				font-size:75%;
 			}
 			p {
 				margin:0;
@@ -23,14 +25,19 @@
 				background-position:center;
 				background-image:url("powerbutton_off.png");
 			}
+			#addonStateSearch {
+				margin:auto;
+			}
 		</style>
 	</head>
 	<body>
+		<div id="addonStateImage"></div>
 		<p style="text-align:center">
 			Currently the RS Wiki Redirector extension is <span id="addonStateDescriptor">disabled</span>.
 		</p>
-		<div id="addonStateImage"></div>
-		<input type="checkbox" name="hideWikia" id="hideWikiaCheck" /> Hide Wikia results in search
+		<div id="addonStateSearch">
+			<input type="checkbox" name="hideWikia" id="hideWikiaCheck" /> Hide Wikia results in search
+		</div>
 		<script type="text/javascript" src="popup.js"></script>
 	</body>
 </html>
