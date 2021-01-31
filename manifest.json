@@ -8,6 +8,7 @@
                   "*://runescape.wikia.com/*",
                   "*://oldschoolrunescape.fandom.com/*",
                   "*://runescape.fandom.com/*",
+                  "*://runescapeclassic.fandom.com/*",
                   "webNavigation",
                   "tabs"
                  ],
