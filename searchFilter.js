@@ -14,10 +14,10 @@
             // Add an element in place of the removed search result signifying a result was removed.
             var removedElement = document.createElement("span");
             removedElement.classList.add("st");
-            removedElement.innerHTML="RS Wikia search result removed by RS Wiki Redirector."
+            removedElement.innerHTML="RS Wikia/Fandom result removed by RS Wiki Redirector."
             removedElement.style.paddingBottom="1em";
             removedElement.style.display="inline-block";
-            element.parentElement.appendChild(removedElement);
+            element.parentNode.insertBefore(removedElement, element);
             //remove the element.
             element.remove();
           } else {
