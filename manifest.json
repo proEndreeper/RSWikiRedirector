@@ -1,7 +1,7 @@
 {
   "name": "RS Wiki Redirector",
   "author": "proEndreeper",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Redirects RS Wikia/Fandom requests to RS Wiki, as well as removes RS Wikia/Fandom search results from Google.",
   "permissions": ["storage",
                   "*://oldschoolrunescape.wikia.com/*",
@@ -9,8 +9,7 @@
                   "*://oldschoolrunescape.fandom.com/*",
                   "*://runescape.fandom.com/*",
                   "*://runescapeclassic.fandom.com/*",
-                  "webNavigation",
-                  "tabs"
+                  "webNavigation"
                  ],
 
   "applications": {
